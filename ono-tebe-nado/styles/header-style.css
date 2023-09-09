@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  padding: 92px 49px 92px 51px;
+}
+
+.header__logo {
+  width: 148px;
+  height: 105px;
+}
+
+.header .contacts-list {
+  margin-left: auto;
+}

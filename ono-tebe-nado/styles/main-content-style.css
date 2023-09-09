@@ -1,0 +1,124 @@
+.section {
+  margin: 180px 50px 0;
+}
+
+
+.cover {
+  position: relative;
+  background: url(../images/cover.jpg), lightgray 50% / cover no-repeat;
+}
+
+.cover-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 165px 50px 0;
+}
+
+.cover-title .aligned-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover-title .aligned-text_center,
+.cover-title .aligned-text_right {
+  line-height: 100%;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 78px;
+  padding: 135px 50px 50px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+
+.section__lots-heading {
+  margin: 0 0 27px 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.section__lots-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.section__lots-card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
+  list-style: none;
+}
+
+.section__lots-look-more-link {
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.section__about {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 25px;
+}
+
+.section__about-logo {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: 0px 95px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.section__about-logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.section__about-column {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.section__about-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.section__about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
