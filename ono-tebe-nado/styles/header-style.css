@@ -10,6 +10,10 @@
   height: 105px;
 }
 
-.header .contacts-list {
+.header__logo:hover {
+  opacity: 0.6;
+}
+
+.header__contacts-list {
   margin-left: auto;
 }

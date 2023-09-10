@@ -8,6 +8,17 @@
   background: url(../images/cover.jpg), lightgray 50% / cover no-repeat;
 }
 
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+}
+
 .cover-title {
   position: relative;
   display: flex;
@@ -16,7 +27,7 @@
   padding: 165px 50px 0;
 }
 
-.cover-title .aligned-text {
+.cover-title__aligned-text {
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -25,8 +36,8 @@
   text-transform: uppercase;
 }
 
-.cover-title .aligned-text_center,
-.cover-title .aligned-text_right {
+.cover-title__aligned-text_center,
+.cover-title__aligned-text_right {
   line-height: 100%;
 }
 
@@ -77,6 +88,10 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+}
+
+.section__lots-look-more-link:hover {
+  opacity: 0.6;
 }
 
 

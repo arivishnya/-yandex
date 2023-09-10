@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/header-style.css" />
-    <link rel="stylesheet" href="./styles/main-content-style.css" />
-    <link rel="stylesheet" href="./styles/footer-style.css" />
   </head>
 
   <body>
@@ -38,35 +35,34 @@
         />
       </a>
 
-      <div class="contacts-list">
+      <address class="contacts-list header__contacts-list">
         <a href="tel:+99995555555" class="contacts-list-item"
           >+9 999 555 5555</a
         >
-        <br />
         <a href="mailto:info@sobaka.ge" class="contacts-list-item"
           >info@sobaka.ge</a
         >
-        <br />
-        <address class="contacts-list-item contacts__address header__address">
+        <p class="contacts-list-item contacts__address header__address">
           наб. Принсенграхт 263-265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
     </header>
 
     <main>
       <section class="cover">
-        <div class="overlay"></div>
-
         <h1 class="cover-title">
-          <span class="aligned-text"
+          <span class="aligned-text cover-title__aligned-text"
             >о<span class="letter-spacing-extended">но</span>
           </span>
 
-          <span class="aligned-text aligned-text_center"
+          <span
+            class="aligned-text aligned-text_center cover-title__aligned-text cover-title__aligned-text_center"
             >те<span class="letter-spacing-extended">бе</span>
           </span>
 
-          <span class="aligned-text aligned-text_right">
+          <span
+            class="aligned-text aligned-text_right cover-title__aligned-text cover-title__aligned-text_right"
+          >
             <span class="letter-spacing-extended">н</span>ад<span
               class="no-letter-spacing"
               >о</span
@@ -75,9 +71,9 @@
         </h1>
 
         <div class="cover__description">
-          <span class="cover__description-text"
-            >Аукцион вещей, в которые никто не верил</span
-          >
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
           <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
@@ -89,19 +85,15 @@
           <li class="section__lots-card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_film">
-                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
 
-                <div class="card-content">
-                  <h3 class="card-content__title">
-                    Фильм режиссёра, который бросил киношколу
-                  </h3>
-
-                  <p class="card-content__text">
-                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                    ставка, если бы вы не знали, что режиссёр — Пол Томас
-                    Андерсон?
-                  </p>
-                </div>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
               </article>
             </a>
           </li>
@@ -109,23 +101,18 @@
           <li class="section__lots-card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_book">
-                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
 
-                <div class="card-content">
-                  <h3 class="card-content__title">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
-                  </h3>
-
-                  <p class="card-content__text">
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </div>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
           </li>
@@ -133,20 +120,16 @@
           <li class="section__lots-card-list-item">
             <a href="#" class="card-link">
               <article class="card card_type_picture">
-                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
 
-                <div class="card-content">
-                  <h3 class="card-content__title">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h3>
-
-                  <p class="card-content__text">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                  </p>
-                </div>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков… Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
               </article>
             </a>
           </li>
@@ -156,7 +139,7 @@
       </section>
 
       <section id="section_about" class="section section__about">
-        <div href="#" class="section__about-logo">
+        <div class="section__about-logo">
           <img
             class="section__about-logo-image"
             alt="изображение логотипа"
@@ -189,29 +172,27 @@
     </main>
 
     <footer class="footer">
-      <div class="contacts-list">
+      <address class="contacts-list">
         <a href="tel:+99995555555" class="contacts-list-item"
           >+9 999 555 5555</a
         >
-        <br />
         <a href="mailto:info@sobaka.ge" class="contacts-list-item"
           >info@sobaka.ge</a
         >
-        <br />
-        <address class="contacts-list-item contacts__address header__address">
+        <p class="contacts-list-item contacts__address header__address">
           наб. Принсенграхт 263-265, Амстердам
-        </address>
-      </div>
+        </p>
+      </address>
 
       <nav class="menu">
-        <ul class="menu__links-list">
-          <li class="menu__links-list-item">
+        <ul class="menu__links-list footer__menu-links-list">
+          <li class="menu__links-list-item footer__menu-links-list-item">
             <a href="#" class="menu__link menu__link_active">главная</a>
           </li>
-          <li class="menu__links-list-item">
+          <li class="menu__links-list-item footer__menu-links-list-item">
             <a href="#section_lots" class="menu__link">посмотреть лоты</a>
           </li>
-          <li class="menu__links-list-item">
+          <li class="menu__links-list-item footer__menu-links-list-item">
             <a href="#section_about" class="menu__link">об аукционе</a>
           </li>
         </ul>
