@@ -1,0 +1,25 @@
+.page.theme_light {
+  --cover: url(../images/cover-image-light.png);
+  --rec-decor: none;
+
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  --header-text-color: #FFC2E6;
+  --accent-text-color: #353430;
+  --accent-color: #FF8DCB;
+  --menu-text-color: #353535;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cover: url(../images/cover-image-light.png);
+    --rec-decor: none;
+
+    --bg-color: #FFF1F7;
+    --text-color: #353430;
+    --header-text-color: #FFC2E6;
+    --accent-text-color: #353430;
+    --accent-color: #FF8DCB;
+    --menu-text-color: #353535;
+  }
+}

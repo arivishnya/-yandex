@@ -1,0 +1,19 @@
+:root {
+  --main-font: 'IBM Plex mono';
+  --cover: url(../images/cover-image-dark.png);
+  --rec-decor: flex;
+  --margin: 10px;
+
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --header-text-color: #DB00FF;
+  --accent-text-color: #000028;
+  --accent-color: #FF0070;
+  --menu-text-color: #FF0070;
+}
+
+@media (width >=768px) {
+  :root {
+    --margin: 20px;
+  }
+}
