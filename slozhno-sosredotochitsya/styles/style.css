@@ -6,7 +6,7 @@ html {
 
 .page {
   color: var(--text-color, #F1B2CE);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font), sans-serif;
   background-color: var(--bg-color, #000028);
   background-image: var(--cover);
   background-attachment: fixed;
@@ -21,7 +21,10 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: calc(100vh - (var(--margin, 10px)*2));
+  min-height: calc(668px - (var(--margin, 10px)*2));
   margin: var(--margin, 10px);
+  overflow: hidden;
 }
 
 .decorated-zone::before {
@@ -31,19 +34,19 @@ html {
   right: 0;
   width: 25px;
   height: 25px;
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
+  border-block-start: 1px solid var(--menu-text-color, #FF0070);
+  border-inline-end: 1px solid var(--menu-text-color, #FF0070);
 }
 
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   width: 25px;
   height: 25px;
-  border-block-end: 1px solid var(--accent-color, #FF0070);
-  border-inline-start: 1px solid var(--accent-color, #FF0070);
+  border-block-end: 1px solid var(--menu-text-color, #FF0070);
+  border-inline-start: 1px solid var(--menu-text-color, #FF0070);
 }
 
 .decorative-element {
@@ -116,7 +119,6 @@ html {
 }
 
 .header__title {
-  height: 192px;
   color: var(--header-text-color, #DB00FF);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -135,7 +137,7 @@ html {
 
 
 .content {
-  margin-block-start: 40px;
+  margin-block-start: 50px;
   margin-inline-start: 10px;
   margin-inline-end: 10px;
 }
@@ -208,7 +210,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 657px;
+  height: calc(100vh - (var(--margin, 10px)*2));
+  min-height: calc(668px - (var(--margin, 10px)*2));
   margin: var(--margin, 10px);
 }
 
@@ -235,11 +238,12 @@ html {
   .header__subtitle {
     align-self: end;
     width: 364px;
-    margin-block-start: 70px;
+    margin-block-start: 165px;
     margin-block-end: 205px;
   }
 
   .content {
+    margin-block-start: 80px;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
   }
@@ -349,8 +353,8 @@ html {
   }
 
   .header__subtitle {
+    margin-block-start: 117px;
     margin-block-end: 155px;
-    margin-block-start: 53px;
     width: 491px;
   }
 
