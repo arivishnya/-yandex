@@ -1,0 +1,37 @@
+:root.theme-light {
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
+
+  --background-color: #fff;
+  --background-repeating-linear-gradient-color-start: #d3d3d3;
+  --background-repeating-linear-gradient-color-end: transparent;
+  --background-linear-gradient-color-start: #e7e7e7;
+  --background-linear-gradient-color-end: #1a1a1a;
+
+  --accent-color: #000;
+  --watermark-text-stroke-color: #fff;
+
+  --card-button-like-background: #000;
+  --card-button-like-color-text: #fff;
+
+  --icon-heart-contour: #000;
+}
+
+:root.theme-dark {
+  --main-font-weight: 465;
+  --accent-font-weight: 785;
+
+  --background-color: #000;
+  --background-repeating-linear-gradient-color-start: #000;
+  --background-repeating-linear-gradient-color-end: transparent;
+  --background-linear-gradient-color-start: #007F0C;
+  --background-linear-gradient-color-end: #004306;
+
+  --accent-color: #00CC14;
+  --watermark-text-stroke-color: #00CC14;
+
+  --card-button-like-background: #00CC14;
+  --card-button-like-color-text: #00CC14;
+
+  --icon-heart-contour: #00CC14;
+}
