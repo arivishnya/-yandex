@@ -6,8 +6,6 @@ export class Form extends EventEmitter implements IForm {
   protected formElement: HTMLFormElement;
   protected inputField: HTMLInputElement;
   protected submitButton: HTMLButtonElement;
-  buttonText: string;
-  placeholder: string;
 
   constructor(formTemplate: HTMLTemplateElement) {
     super();
@@ -22,13 +20,20 @@ export class Form extends EventEmitter implements IForm {
       ".todo-form__submit-btn",
       this.formElement
     ) as HTMLButtonElement;
-    this.buttonText = "";
-    this.placeholder = "";
+
     this.formElement.addEventListener("submit", (event) => {
       event.preventDefault();
-      this.emit("submit", { value: this.inputField.value });
+      this.emit("form:submit", { value: this.inputField.value });
     });
   }
+
+  set buttonText(data: string) {
+		this.submitButton.textContent = data;
+	}
+
+	set placeholder(data: string) {
+		this.inputField.placeholder = data;
+	}
 
   render() {
     return this.formElement;

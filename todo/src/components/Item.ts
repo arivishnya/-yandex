@@ -30,13 +30,13 @@ export class Item extends EventEmitter implements IViewItem {
     ) as HTMLButtonElement;
 
     this.copyButton.addEventListener("click", () =>
-      this.emit("copy", { id: this._id })
+      this.emit("item:copy", { id: this._id })
     );
     this.deleteButton.addEventListener("click", () =>
-      this.emit("delete", { id: this._id })
+      this.emit("item:delete", { id: this._id })
     );
     this.editButton.addEventListener("click", () =>
-      this.emit("edit", { id: this._id })
+      this.emit("item:edit", { id: this._id })
     );
   }
 

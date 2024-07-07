@@ -40,14 +40,14 @@ export class TodoPresenter {
     this.todoEditForm.buttonText = "Изменить";
     this.todoEditForm.placeholder = "Новое название";
 
-    this.model.on("changed", () => {
+    this.model.on("model:changed", () => {
       this.renderView();
     });
 
-    this.todoForm.on("submit", this.handleFormSubmitForm.bind(this));
+    this.todoForm.on("form:submit", this.handleFormSubmitForm.bind(this));
 
-    this.todoEditForm.on("submit", (data: { value: string }) =>
-      this.handleFormSubmitEditForm.bind(data)
+    this.todoEditForm.on("form:submit", (data: { value: string }) =>
+      this.handleFormSubmitEditForm(data)
     );
   }
 
@@ -81,9 +81,9 @@ export class TodoPresenter {
     const itemList = this.model.items
       .map((item) => {
         const todoItem = new this.viewItemConstructor(this.itemTemplate);
-        todoItem.on("copy", this.handleCopyItem.bind(this));
-        todoItem.on("delete", this.handleDeleteItem.bind(this));
-        todoItem.on("edit", this.handleEditItem.bind(this));
+        todoItem.on("item:copy", this.handleCopyItem.bind(this));
+        todoItem.on("item:delete", this.handleDeleteItem.bind(this));
+        todoItem.on("item:edit", this.handleEditItem.bind(this));
         const itemElement = todoItem.render(item);
         return itemElement;
       })
