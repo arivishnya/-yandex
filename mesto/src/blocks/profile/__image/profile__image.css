@@ -1,0 +1,37 @@
+.profile__image {
+  width: 120px;
+  height: 120px;
+  margin: 0 29px 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__image-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border: none;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.profile__image-button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 740px) {
+  .profile__image {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile__image {
+    margin-right: 0;
+  }
+}
